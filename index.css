@@ -53,3 +53,22 @@ a {
 	justify-content: space-around;
 	margin-right: 60%;
 }
+.skills-list {
+	/*position: relative;
+	top: 12%;
+	left: 12%;*/
+	display: flex;
+	flex-direction: column;
+	color: #818181;
+}
+h2 {
+	font-size: 3em;
+	color: #ED4C67;
+	letter-spacing: 0.375em;
+	line-height: 1.5em;
+}
+.skills-list ul {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
