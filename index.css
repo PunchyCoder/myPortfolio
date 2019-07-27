@@ -3,12 +3,21 @@ body {
 	font-family: Archivo Narrow, sans-serif;
 	background-color: #0D0F1F;
 }
+.bg-image {
+	background-image: url("img/you-are-here-hd-edit.jpg");
+	background-size: 60%;
+	background-repeat: no-repeat;
+	background-position: 80% 60%;
+	width: 100vw;
+	height: 100vh;
+}
 h1 {
 	font-size: 2em;
 }
 nav {
 	display: flex;
 	flex-direction: column;
+	background-color: rgba(0,0,0, .4);
 	color: #E5E5E5;
 	border-bottom: solid 2px #ED4C67;
 }
@@ -24,6 +33,7 @@ a {
 	background-color: #ED4C67;
 	border: none;
 	border-radius: 5px;
+	padding: 5px;
 	height: 30px;
 	color: #fff;
 }
