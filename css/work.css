@@ -1,0 +1,38 @@
+/*-----------------------------------------------------------*/
+/*#######              WORK grid layout             #########*/
+/*-----------------------------------------------------------*/
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 5% 0;
+}
+.card-wrapper {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	width: 90%;
+}
+.card {
+	border-radius: 8px;
+	background-color: #24273D;
+	width: 340px;
+	height: 360px;
+	margin: 10px 0;
+	padding: 10px;
+	/*word-wrap: break-word;*/
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+.card h3 {
+	color: orange;
+}
+.card img {
+	border: orange;
+	border-radius: 8px;
+}
+.card p {
+	color: orange;
+}
