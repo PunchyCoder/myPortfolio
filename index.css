@@ -45,6 +45,15 @@ a {
 .links li {
 	margin: 0 10px;
 }
+.links img {
+	width: 30px;
+	height: 30px;
+	color: #818181;
+}
+.links ul li:first-child img {
+	width: 26px;
+	height: 26px;
+}
 .pages {
 	margin: 10px;
 }
@@ -56,6 +65,17 @@ a {
 /*-----------------------------------------------------------*/
 /*#######     WEB DEV + Front End - skills list     #########*/
 /*-----------------------------------------------------------*/
+
+div.wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 90%;
+	margin: 10% 0 0 0;
+}
+section {
+	margin: 0 5%;
+}
 .skills-list {
 	/*position: relative;
 	top: 12%;
@@ -70,11 +90,27 @@ h2 {
 	letter-spacing: 0.375em;
 	line-height: 1.5em;
 }
+h3 {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	line-height: 2.0em;
+	color: #fff;
+}
 .skills-list ul {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
+	line-height: 1.5em;
 }
+.wrapper img {
+	width: 400px;
+	border: solid 1px #ED4C67;
+	/*border-radius: 5px;*/
+	border-left: none;
+	border-right: none;
+}
+
 
 
 /*-----------------------------------------------------------*/
