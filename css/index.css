@@ -19,6 +19,7 @@ h1 {
 	font-weight: 400;
 }
 nav {
+	min-height: 120px;
 	padding: 0 10%;
 	display: flex;
 	flex-direction: column;
