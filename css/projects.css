@@ -13,25 +13,44 @@ section {
 	align-items: center;
 }
 div.wrapper {
+	width: 70%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-
+	padding: 20px;
 	border: solid 2px dodgerblue;
 }
 .upper {
+	width: 100%;
 	display: flex;
 	justify-content: space-around;
+	
+}
+.lower {
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	/*margin-bottom: 20px;*/
 }
 .lower p {
-	height: 200px;
+	width: 100%;
+	overflow-wrap: break-word;
+	border-radius: 8px;
+	
 }
-.left-col, .right-col {
+.left-col {
 	width: 50%;
 	display: flex;
 	flex-direction: column; 
 	align-items: center;
+}
+.right-col {
+	width: 50%;
+	display: flex;
+	flex-direction: column; 
+	align-items: left;
 }
 .image {
 	width: 500px;
@@ -39,15 +58,18 @@ div.wrapper {
 	background-color: #3F478A;
 }
 .btn {
+	width: 25%;
+	height: 40px;
 	color: #fef6f7;
 	background-color: #ED4C67;
 	border-radius: 8px;
-	padding: 5px;
-	margin: ;
+	border: solid 1px #fef6f7;
+	padding: 5px ;
 }
 .bg-blue {
-	background-color: #3F478A;
 	color: #dedede;
+	background-color: #3F478A;
+	
 }
 .button-wrapper {
 	width: 100%;
@@ -55,15 +77,25 @@ div.wrapper {
 	display: flex;
 	justify-content: space-around;
 }
-
-ul.features, ul.tech-stack {
-	display: inline-block;
-	width: 100%;
+h2 {
+	margin-bottom: 20px;
 }
+.lists {
 
-p, li, {
+}
+ul.features, ul.tech-stack {
+	width: 100%;
+	display: inline-block;
+}
+p, li {
 	font-size: 1.25rem;
-	line-height: 2.4em;/*using em's for lineHeight seems to work best*/
-	
+	line-height: 1.4em;/*using em's for lineHeight seems to work best*/
 
+}
+div.hr {
+	width: 90%;
+	height: 0px;
+	display: inline-block;
+	margin: 20px 0;
+	border: solid 1px #808080
 }
