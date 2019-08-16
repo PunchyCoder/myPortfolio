@@ -117,10 +117,13 @@ ul.features, ul.tech-stack {
 	width: 100%;
 	display: inline-block;
 }
-p, li {
+p {
 	font-size: 1.25rem;
 	line-height: 1.4em;/*using em's for lineHeight seems to work best*/
-
+}
+li {
+	font-size: 1rem;
+	line-height: 1.4em;
 }
 div.hr {
 	width: 90%;
