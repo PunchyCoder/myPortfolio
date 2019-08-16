@@ -60,10 +60,12 @@
 				<div class="upper">
 					<div class="left-col">
 						<div class="slide-wrapper">
+							<button class="slide-left">left</button>
 							<img class="slide current" src="../img/tinied/ss-fanserver-main.jpg">
 							<img class="slide" src="../img/tinied/ss-fanserver-search-results.jpg">
 							<img class="slide" src="../img/tinied/ss-fanserver-synopsis.jpg">
 							<img class="slide" src="../img/ss-fanserver-trailer.jpg">
+							<button class="slide-right">right</button>
 						</div>
 						<div class="button-wrapper">
 							<a class="btn" href="https://punchycoder.github.io/FanServer-app/">LIVE</a>
@@ -105,7 +107,7 @@
 
 
 
-		<section>
+<!-- 		<section>
 			<div class="wrapper">
 				<div class="upper">
 					<div class="left-col">
@@ -154,9 +156,41 @@
 			</div>
 		</section>
 
-	</main>
+	</main> -->
 
 	<div class="space"></div>
+
+<script type="text/javascript">
+
+const slides = document.querySelectorAll('.slide');
+const button_left = document.querySelector('.slide-left');
+const button_right = document.querySelector('.slide-right');
+
+let current_index = 0;
+
+console.log(button_left);
+
+const move = function(e) {
+
+	if (current_index === slides.length-1) {
+
+		slides[current_index].classList.remove('current');
+		current_index = 0;
+		slides[current_index].classList.add('current');
+	} else {
+		slides[current_index].classList.remove('current');
+		current_index ++;
+		slides[current_index].classList.add('current');
+	}
+
+}
+
+button_left.addEventListener('click', move);
+
+
+
+	
+</script>
 
 </body>
 
