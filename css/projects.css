@@ -120,10 +120,16 @@ ul.features, ul.tech-stack {
 p {
 	font-size: 1.25rem;
 	line-height: 1.4em;/*using em's for lineHeight seems to work best*/
+	padding: 1rem;
+
 }
 li {
+
 	font-size: 1rem;
 	line-height: 1.4em;
+	margin:  1rem 0;
+	background-color: rgba(255,255,255, 0.1);
+/*	letter-spacing: 1px;*/
 }
 div.hr {
 	width: 90%;
