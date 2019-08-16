@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -63,39 +63,58 @@
 					
 					<div class="left-col">
 
-						<div class="image"></div>
+						<div class="slide-wrapper">
+							<img class="slide current" src="../img/tinied/ss-fanserver-main.jpg">
+							<img class="slide" src="../img/tinied/ss-fanserver-search-results.jpg">
+							<img class="slide" src="../img/tinied/ss-fanserver-synopsis.jpg">
+							<img class="slide" src="../img/ss-fanserver-trailer.jpg">
+						</div>
+
 						<div class="button-wrapper">
-							<button class="btn">LIVE</button>
-							<button class="btn">CODE</button>
-							<button class="btn">DESIGN</button>
+							<a class="btn" href="https://punchycoder.github.io/FanServer-app/">LIVE</a>
+							<a class="btn" href="https://github.com/PunchyCoder/FanServer-app">CODE</a>
+							<a class="btn no-go" href="#">No DESIGN Available</a>
 						</div>
 					</div>
+
+					<p class="bg-blue">This is a short blurb about the project.
+					</p>
 
 					<div class="right-col">
-						<h2>PROJECT TITLE</h2>
+						<h2>FanServer</h2>
 
 						<div class="lists">
-							<ul class="features ">
-								<li>this is some cool shit</li>
-								<li>blows other apps out of the water</li>
-								<li>uses mind-blowing tecknology</li>
-							</ul>
-							<div class="hr"></div>
 
 							<ul class="tech-stack ">
-								<li>uses Redux</li>
-								<li>uses React.js</li>
-								<li>uses glide.js</li>
+								<h1>-Tech Stack-</h1>
+								<li>HTML && CSS</li>
+								<li>JavaScript</li>
+								<li>jQuery</li>
 							</ul>
+
+							<div class="hr"></div>
+
+							<ul class="features ">
+								<h1>-Features-</h1>
+								<li>Adding basic toggle funcion to syopsis-display on button click. The key was to use event.stopImmediatPropagation... google it.</li>
+								<li>Looked all over for a way to make container grow to fit content in CSS; found width: fit-content ...Simply amazing.</li>
+								<li>Figured out the synopsis/trailer button event-logic was a pain. I wasn't referencing the right element in jQuery; code needs refinement.</li>
+								<li>Because Kitsu API doesn't have a youtubeVideoId for all Anime titles, some results display an "trailer missing" message.</li>
+								<li>I tried using Google's Youtube API, however, the query cost is 100 per request. At a query cap of 10,000 and with 10 requests (cost of 1000) per search, I found it unsustainable.</li>
+							</ul>
+							
+
+							
 						</div>
 					</div>
 
 				</div>
 
 
-				<div class="lower">
-					<p class="bg-blue">This is some other informational bullshit written to get others to hire me. yaba-daba doooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo</p>
-				</div>
+				<!-- <div class="lower">
+					<p class="bg-blue">This is a short blurb about the project.
+					</p>
+				</div> -->
 
 			</div>
 		</section>
